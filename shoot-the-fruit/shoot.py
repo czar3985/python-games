@@ -25,7 +25,6 @@ def on_mouse_down(pos):
         place_fruits()
     else:
         print("You missed!")
-        quit()
 
 place_fruits()
 
