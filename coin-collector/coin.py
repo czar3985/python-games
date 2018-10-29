@@ -5,8 +5,8 @@ from random import randint
 
 
 # Game screen size 400px x 400px
-WIDTH = 400
-HEIGHT = 400
+WIDTH = 500
+HEIGHT = 500
 
 # Game variables
 score = 0   # Initializes score
@@ -79,7 +79,7 @@ def update():
     return
 
 
-clock.schedule(time_up, 7.0) # Set the game to run for 7 seconds
+clock.schedule(time_up, 60.0) # Set the game to run for 60 seconds
 place_coin()
 
 pgzrun.go()
