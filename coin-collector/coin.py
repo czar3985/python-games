@@ -63,13 +63,13 @@ def update():
 
     # Move the fox's position based on arrow key presses
     if keyboard.left:
-        fox.x = fox.x - 2
+        fox.x = fox.x - 4
     elif keyboard.right:
-        fox.x = fox.x + 2
+        fox.x = fox.x + 4
     elif keyboard.up:
-        fox.y = fox.y - 2
+        fox.y = fox.y - 4
     elif keyboard.down:
-        fox.y = fox.y + 2
+        fox.y = fox.y + 4
 
     # Increment score when fox touches the coin
     if (fox.colliderect(coin)):
