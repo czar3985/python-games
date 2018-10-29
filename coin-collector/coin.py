@@ -62,13 +62,14 @@ def update():
     global score
 
     # Move the fox's position based on arrow key presses
-    if keyboard.left:
+    # Check that fox doesn't go past the screen
+    if keyboard.left and fox.x > 5:
         fox.x = fox.x - 4
-    elif keyboard.right:
+    elif keyboard.right and fox.x < WIDTH - 5:
         fox.x = fox.x + 4
-    elif keyboard.up:
+    elif keyboard.up and fox.y > 5:
         fox.y = fox.y - 4
-    elif keyboard.down:
+    elif keyboard.down and fox.y < HEIGHT - 5:
         fox.y = fox.y + 4
 
     # Increment score when fox touches the coin
